@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "620313035685",
+    "project_id": "marchsafe",
+    "storage_bucket": "marchsafe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620313035685:android:7ff957bb8c68c4be979e4c",
+        "android_client_info": {
+          "package_name": "com.marchsafe.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnj1K2WlSTXK2TqyBTaNEw1INrD_kpI0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620313035685:android:333d03ae5110dcdf979e4c",
+        "android_client_info": {
+          "package_name": "com.mycompany.CounterApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnj1K2WlSTXK2TqyBTaNEw1INrD_kpI0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
