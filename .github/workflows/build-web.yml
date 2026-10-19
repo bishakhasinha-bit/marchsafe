@@ -1,0 +1,29 @@
+name: Build MarchSafe Website
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  build-web:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - name: Get dependencies
+        run: flutter pub get
+      - name: Build release website
+        run: flutter build web --release --base-href /
+      - name: Upload website files
+        uses: actions/upload-artifact@v4
+        with:
+          name: marchsafe-website
+          path: build/web/
+          if-no-files-found: error
+          retention-days: 14
